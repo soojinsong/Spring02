@@ -14,5 +14,10 @@ pipeline {
                 sh 'mvn clean package'
             }
         }        
+        stage('2. docker 버전 확인') {
+            steps {
+                sh 'docker version'
+            }
+        }
     }
 }
