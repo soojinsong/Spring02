@@ -19,5 +19,10 @@ pipeline {
                 sh 'docker version'
             }
         }
+        stage('3. Docker Build(도커 이미지 생성)') {
+            steps {
+                sh 'docker build -t ex02-app:latest'
+            }
+        }
     }
 }
