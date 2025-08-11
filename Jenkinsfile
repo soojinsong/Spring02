@@ -27,6 +27,7 @@ pipeline {
                 sh 'docker build -t ex02-app:latest .'
             }
         }
+        
         stage('4. Docker Push') {
             steps {
                 withCredentials([usernamePassword(
