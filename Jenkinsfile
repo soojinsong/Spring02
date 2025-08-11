@@ -27,7 +27,7 @@ pipeline {
                 sh 'docker build -t ex02-app:latest .'
             }
         }
-        stage('4. Docker Push') { // 여기서부터 막힘
+        stage('4. Docker Push') {
             steps {
                 withCredentials([usernamePassword(
                     credentialsId: 'dockerhub-cred',
