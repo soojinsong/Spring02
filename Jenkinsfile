@@ -27,7 +27,7 @@ pipeline {
                 sh 'docker build -t ex02-app:latest .'
             }
         }
-/*
+
         stage('4. Docker Push') { // 여기서부터 막힘
             steps {
                 withCredentials([usernamePassword(
@@ -43,7 +43,7 @@ pipeline {
                 }
             }
         }
-     
+     /*
         stage('5. Deploy to K3s') {
             steps {
                 sh '''
